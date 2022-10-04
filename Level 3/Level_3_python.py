@@ -50,10 +50,13 @@ for user in users:
         if total_amount <= objective * 0.5:
             commission = deal[1] * 0.05
         elif total_amount <= objective and total_amount > objective * 0.5:
-            part_1 = deal[1] - (total_amount - objective * 0.5)
-            commission = part_1 * 0.05 + (total_amount - objective * 0.5) * 0.1
+            if total_amount - deal[1] < objective * 0.5:
+                part_1 = deal[1] - (total_amount - objective * 0.5)
+                commission = part_1 * 0.05 + (total_amount - objective * 0.5) * 0.1
+            else:
+                commission = deal[1] * 0.1
         elif total_amount > objective:
-            if deal[1] > objective and total_amount - deal[1] < objective:
+            if total_amount - deal[1] < objective * 0.5:
                 part_1 = deal[1] - (total_amount - objective * 0.5)
                 part_2 = deal[1] - part_1 - (total_amount - objective)
                 commission = part_1 * 0.05 + part_2 * 0.1 + (total_amount - objective) * 0.15
