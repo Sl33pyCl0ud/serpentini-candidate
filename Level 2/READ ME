@@ -22,3 +22,7 @@ He will be commissioned:
 + 15% * 1000 => (above his objective)
 
 This means he will be commissioned 25 + 50 + 150 = 225 euros
+
+## Difficulties
+
+The most difficult part was to be sure that every conceivable scenario were working in this program. That's why there is a lot of conditional loop.

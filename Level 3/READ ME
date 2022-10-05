@@ -52,5 +52,5 @@ To stock the data, I choose to use a database which i can create directly from p
 
 # Difficulties
 
-The most difficult part was to be sure that every conceivable scenario were working in this program. That's why there is a lot of conditional loop.
+The most difficult part was to be sure that every conceivable scenario were working in this program. That's why there is a lot of conditional loop (like in the Level 2)
 Also for this one, I wasn't sure if the objective was annual or monthly. I assume it was annual because in the given example, we don't see any date or reset after a month. And also there is only one objective which is abnormal if you have an objective every month (could possibly change).
